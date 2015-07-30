@@ -12,7 +12,7 @@ $messages = [
   ['title' => 'Message #9', 'content' => 'Content #9', 'author' => 'Author #9']
 ];
 
-$db = new SQLite3('messages.db');
+$db = new SQLite3('message_board.db');
 
 $messages_table_query = <<<EOF
   CREATE TABLE IF NOT EXISTS MESSAGES
@@ -23,6 +23,15 @@ $messages_table_query = <<<EOF
 EOF;
 
 $db->exec($messages_table_query);
+
+$users_table_query = <<<EOF
+  CREATE TABLE IF NOT EXISTS USERS
+    (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    EMAIL   TEXT  NOT NULL,
+    PASSWORD TEXT  NOT NULL);
+EOF;
+
+$db->exec($users_table_query);
 
 foreach($messages as $message)
 {
