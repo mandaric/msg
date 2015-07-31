@@ -1,6 +1,6 @@
 <?php
 
-$db = new SQLite3('messages.db');
+$db = new SQLite3('message_board.db');
 
 if (isset($_GET['id']) && empty($_GET['id']) == false) {
   $statement = $db->prepare('SELECT * FROM MESSAGES WHERE id=:id');

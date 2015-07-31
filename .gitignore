@@ -44,4 +44,4 @@ Temporary Items
 
 # phpStorm
 .idea
-messages.db
+message_board.db
