@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/mandaric/msg.png?label=ready&title=Ready)](https://waffle.io/mandaric/msg)
 # msg
 Message Board v2.0
 
