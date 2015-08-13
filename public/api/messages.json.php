@@ -1,6 +1,6 @@
 <?php
 
-$db = new SQLite3(__DIR__.'/../../message_board.db');
+$db = require __DIR__ . '/../../src/db.php';
 
 $sql = <<<EOF
     SELECT messages.id, messages.title, messages.content, users.username

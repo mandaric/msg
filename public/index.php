@@ -5,6 +5,9 @@
           <h3>MessageBoard</h3>
           <hr>
 
+          <a href="/new.php" class="btn btn-success">New Message</a>
+          <hr>
+
           <div class="list-group" id="message-board">
           </div>
         </div>

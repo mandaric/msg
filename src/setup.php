@@ -1,6 +1,6 @@
 <?php
 
-$db = new SQLite3('message_board.db');
+$db = require __DIR__ . '/src/db.php';
 
 // ----------------------------------------
 
@@ -57,4 +57,3 @@ foreach ($messages as $message) {
 
     $db->exec($sql);
 }
-
